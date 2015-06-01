@@ -30,8 +30,16 @@
         self.selectedIndex = index;
     };
     
-    
     [self.view addSubview:bar];
+    
+    // 根据TabBar有多少个NavigationController添加按钮
+    for(int i = 0;i < self.viewControllers.count;++i)
+    {
+        NSString *imageName = [NSString stringWithFormat:@"TabBar%d",i + 1];
+        NSString *hImageName = [NSString stringWithFormat:@"TabBar%dSel",i + 1];
+        
+        [bar addButtonWithImageName:imageName withHighligthImageName:hImageName];
+    }
 }
 
 //- (void)viewDidAppear:(BOOL)animated
