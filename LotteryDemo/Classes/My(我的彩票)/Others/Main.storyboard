@@ -31,8 +31,8 @@
         <!--Item-->
         <scene sceneID="Tg5-D6-5GK">
             <objects>
-                <navigationController id="jCr-Td-hsW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="TabBar1" id="ppR-3f-sTi"/>
+                <navigationController id="jCr-Td-hsW" customClass="LDNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ppR-3f-sTi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VBk-5V-8px">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-1164" y="-584"/>
         </scene>
-        <!--View Controller-->
+        <!--购彩大厅-->
         <scene sceneID="L1o-fG-lIk">
             <objects>
-                <viewController id="x37-FH-sdH" sceneMemberID="viewController">
+                <viewController id="x37-FH-sdH" customClass="CLHallViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbA-55-rx5"/>
                         <viewControllerLayoutGuide type="bottom" id="SiR-qn-Fuu"/>
@@ -59,17 +59,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1et-at-EVc"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="1et-at-EVc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hMb-Fb-5qO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XPA-hv-5xA">
+                                <rect key="frame" x="233" y="7" width="49" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="资讯" image="zixunBarFlat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZUb-qR-6oW" kind="show" id="BW7-IY-frJ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udW-LZ-APZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-761" y="-577"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="C0P-5v-kFd">
+            <objects>
+                <viewController id="ZUb-qR-6oW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z4X-4s-67t"/>
+                        <viewControllerLayoutGuide type="bottom" id="OvQ-MF-qIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sb0-Fr-3GY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iP-RW-QY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="-574"/>
+        </scene>
         <!--Item-->
         <scene sceneID="5rx-AX-gW9">
             <objects>
-                <navigationController id="zLP-KE-mEt" sceneMemberID="viewController">
+                <navigationController id="zLP-KE-mEt" customClass="LDNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="w8j-Ws-GrO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MCM-H6-7G5">
@@ -84,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="-1164" y="48"/>
         </scene>
-        <!--View Controller-->
+        <!--Buy View Controller-->
         <scene sceneID="NGR-jA-IKm">
             <objects>
-                <viewController id="ST2-bd-gN7" sceneMemberID="viewController">
+                <viewController id="ST2-bd-gN7" customClass="LDBuyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7o2-qt-DqV"/>
                         <viewControllerLayoutGuide type="bottom" id="dgp-cE-2zs"/>
@@ -104,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="-771" y="56"/>
         </scene>
-        <!--View Controller-->
+        <!--开奖信息-->
         <scene sceneID="ZeQ-Qi-bPS">
             <objects>
                 <viewController id="7ie-3Q-zVS" sceneMemberID="viewController">
@@ -117,7 +150,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dgA-cV-vLY"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="dgA-cV-vLY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlG-iX-5fv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,7 +160,7 @@
         <!--Item-->
         <scene sceneID="JoQ-hp-zKq">
             <objects>
-                <navigationController id="GDQ-nd-hm1" sceneMemberID="viewController">
+                <navigationController id="GDQ-nd-hm1" customClass="LDNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5mE-kQ-L7K"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jn0-ML-pyl">
@@ -142,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="-1164" y="1267"/>
         </scene>
-        <!--View Controller-->
+        <!--幸运选号-->
         <scene sceneID="lvj-ta-kOI">
             <objects>
                 <viewController id="HW1-GO-3R1" sceneMemberID="viewController">
@@ -155,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fmk-OV-W6h"/>
+                    <navigationItem key="navigationItem" title="幸运选号" id="fmk-OV-W6h"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezy-Zn-f2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,7 +198,7 @@
         <!--Item-->
         <scene sceneID="e2y-NK-rlG">
             <objects>
-                <navigationController id="GxZ-ah-rgQ" sceneMemberID="viewController">
+                <navigationController id="GxZ-ah-rgQ" customClass="LDNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Oxy-vP-OU1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IdC-rs-RDX">
@@ -180,7 +213,7 @@
             </objects>
             <point key="canvasLocation" x="-1164" y="1897"/>
         </scene>
-        <!--View Controller-->
+        <!--我的彩票-->
         <scene sceneID="ghx-bi-S0r">
             <objects>
                 <viewController id="kUh-6h-hex" sceneMemberID="viewController">
@@ -193,7 +226,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KbK-xy-dxT"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="KbK-xy-dxT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufU-TN-nMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,7 +236,7 @@
         <!--Item-->
         <scene sceneID="YGN-ht-WKR">
             <objects>
-                <navigationController id="KHS-sd-6WY" sceneMemberID="viewController">
+                <navigationController id="KHS-sd-6WY" customClass="LDNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bvR-Bd-dbj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NGh-ei-kt9">
@@ -220,6 +253,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TabBar1" width="64" height="49"/>
+        <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
 </document>

@@ -21,16 +21,16 @@
     
 //    NSLog(@"%@", NSStringFromCGRect(self.tabBar.frame));
     
-    [self.tabBar removeFromSuperview];
+//    [self.tabBar removeFromSuperview];
     
-    LDTabBar *bar = [[LDTabBar alloc] initWithFrame:self.tabBar.frame];
+    LDTabBar *bar = [[LDTabBar alloc] initWithFrame:self.tabBar.bounds];
     
     bar.block = ^(NSInteger index)
     {
         self.selectedIndex = index;
     };
     
-    [self.view addSubview:bar];
+    [self.tabBar addSubview:bar];
     
     // 根据TabBar有多少个NavigationController添加按钮
     for(int i = 0;i < self.viewControllers.count;++i)
@@ -40,6 +40,11 @@
         
         [bar addButtonWithImageName:imageName withHighligthImageName:hImageName];
     }
+    
+//    // 获取所有导航条
+//    UINavigationBar *navBar = [UINavigationBar appearance];
+//    
+//    [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
 }
 
 //- (void)viewDidAppear:(BOOL)animated

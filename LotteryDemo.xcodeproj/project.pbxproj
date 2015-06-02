@@ -16,6 +16,10 @@
 		4CF5F2901B1C52990068EA95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F28B1B1C52990068EA95 /* ViewController.m */; };
 		4CF5F2931B1C55970068EA95 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2921B1C55970068EA95 /* MainTabBarController.m */; };
 		4CF5F2961B1C57560068EA95 /* LDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2951B1C57560068EA95 /* LDTabBar.m */; };
+		4CF5F2991B1C7C4D0068EA95 /* LDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2981B1C7C4D0068EA95 /* LDNavigationController.m */; };
+		4CF5F2D41B1C83990068EA95 /* CLHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2D31B1C83990068EA95 /* CLHallViewController.m */; };
+		4CF5F2D71B1C874D0068EA95 /* LDBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2D61B1C874D0068EA95 /* LDBuyViewController.m */; };
+		4CF5F2DA1B1C8F2B0068EA95 /* LDTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF5F2D91B1C8F2B0068EA95 /* LDTitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,14 @@
 		4CF5F2921B1C55970068EA95 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		4CF5F2941B1C57560068EA95 /* LDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTabBar.h; sourceTree = "<group>"; };
 		4CF5F2951B1C57560068EA95 /* LDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTabBar.m; sourceTree = "<group>"; };
+		4CF5F2971B1C7C4D0068EA95 /* LDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNavigationController.h; sourceTree = "<group>"; };
+		4CF5F2981B1C7C4D0068EA95 /* LDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNavigationController.m; sourceTree = "<group>"; };
+		4CF5F2D21B1C83990068EA95 /* CLHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHallViewController.h; sourceTree = "<group>"; };
+		4CF5F2D31B1C83990068EA95 /* CLHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHallViewController.m; sourceTree = "<group>"; };
+		4CF5F2D51B1C874D0068EA95 /* LDBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBuyViewController.h; sourceTree = "<group>"; };
+		4CF5F2D61B1C874D0068EA95 /* LDBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBuyViewController.m; sourceTree = "<group>"; };
+		4CF5F2D81B1C8F2B0068EA95 /* LDTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTitleButton.h; sourceTree = "<group>"; };
+		4CF5F2D91B1C8F2B0068EA95 /* LDTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTitleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +187,8 @@
 		4CF5F2641B1C520E0068EA95 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CF5F2D51B1C874D0068EA95 /* LDBuyViewController.h */,
+				4CF5F2D61B1C874D0068EA95 /* LDBuyViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +203,8 @@
 		4CF5F2661B1C520E0068EA95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4CF5F2D81B1C8F2B0068EA95 /* LDTitleButton.h */,
+				4CF5F2D91B1C8F2B0068EA95 /* LDTitleButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +222,8 @@
 		4CF5F2681B1C520E0068EA95 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CF5F2D21B1C83990068EA95 /* CLHallViewController.h */,
+				4CF5F2D31B1C83990068EA95 /* CLHallViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,6 +288,8 @@
 			children = (
 				4CF5F2911B1C55970068EA95 /* MainTabBarController.h */,
 				4CF5F2921B1C55970068EA95 /* MainTabBarController.m */,
+				4CF5F2971B1C7C4D0068EA95 /* LDNavigationController.h */,
+				4CF5F2981B1C7C4D0068EA95 /* LDNavigationController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -436,11 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF5F2DA1B1C8F2B0068EA95 /* LDTitleButton.m in Sources */,
 				4CF5F2901B1C52990068EA95 /* ViewController.m in Sources */,
 				4CF5F2961B1C57560068EA95 /* LDTabBar.m in Sources */,
+				4CF5F2D41B1C83990068EA95 /* CLHallViewController.m in Sources */,
 				4CF5F28E1B1C52990068EA95 /* main.m in Sources */,
 				4CF5F2931B1C55970068EA95 /* MainTabBarController.m in Sources */,
 				4CF5F28C1B1C52990068EA95 /* AppDelegate.m in Sources */,
+				4CF5F2991B1C7C4D0068EA95 /* LDNavigationController.m in Sources */,
+				4CF5F2D71B1C874D0068EA95 /* LDBuyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
